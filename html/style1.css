@@ -1,0 +1,145 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    background: linear-gradient(to bottom, #ba34db, #ffffff);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  .site-logo {
+    width: 122px;
+    height: 40px;
+    object-fit: contain; /* Ensures the image is not stretched */
+    margin-top: 5px;
+  }
+  .site-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Adjust to match your theme */
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+  } 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .join-btn {
+    background-color: #ba34db;
+    color: white;
+    border-radius: 5px;
+  }
+
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ba34db, #ffffff);
+}
+
+/* About Section */
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+}
+
+.first_part {
+    display: flex;
+    flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
+    gap: 20px;  /* Space between images */
+    justify-content: space-between;  /* Optional: space between items */
+}
+
+.first_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  /* Take up full width */
+    gap: 20px;
+}
+
+.first_box img {
+    width: 32%;  /* Ensures images take up roughly one-third of the space */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;  /* Optional: adds rounded corners */
+}
+
+/* Styling for the text beside the images */
+.second_box {
+    flex: 1 1 60%;  /* Allows this section to take up more space */
+    padding-left: 20px;
+}
+
+.top_head {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.head {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.para {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.features {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.features li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.features i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .first_box {
+        flex-direction: column;  /* Stack images vertically on smaller screens */
+    }
+
+    .first_box img {
+        width: 100%;  /* Each image takes up full width when stacked */
+        margin-bottom: 20px;  /* Add spacing between images */
+    }
+
+    .second_box {
+        flex: 1 1 100%;  /* Full width on smaller screens */
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
