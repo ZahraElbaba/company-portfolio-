@@ -54,6 +54,7 @@ body {
   background-color: #ba34db;
   color: white;
   border-radius: 5px;
+  border-style: solid 10px white ;
 }
 
 .hero-content {
@@ -83,7 +84,8 @@ body {
 }
 
 .cta {
-  display: inline-block;
+  display: -ms-inline-grid;
+  margin: 0 280px;
   padding: 0.75rem 1.5rem;
   background-color: #ba34db;
   color: whitesmoke;
