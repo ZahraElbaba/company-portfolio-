@@ -1,9 +1,4 @@
 /* General reset and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .hero {
     background: linear-gradient(to bottom, #ba34db, #ffffff);
     color: white;
@@ -46,100 +41,102 @@
     color: white;
     border-radius: 5px;
   }
-
-/* Body and Global Styles */
+/* General layout */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #ba34db, #ffffff);
+    margin: 0;
+    padding: 0;
 }
 
-/* About Section */
-.section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Header without navbar */
+.hero {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-header {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.first_part {
-    display: flex;
-    flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
-    gap: 20px;  /* Space between images */
-    justify-content: space-between;  /* Optional: space between items */
+.site-logo {
+    width: 50px;
+    height: auto;
 }
 
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Image and text section */
 .first_box {
     display: flex;
-    justify-content: space-between;
-    width: 100%;  /* Take up full width */
-    gap: 20px;
+    justify-content: center;
+    gap: 30px; /* Increased gap between images */
+    margin-top: 30px;
 }
 
-.first_box img {
-    width: 32%;  /* Ensures images take up roughly one-third of the space */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Optional: adds rounded corners */
+.image-item {
+    text-align: center;
+    width: 250px; /* Added a fixed width for each image container */
 }
 
-/* Styling for the text beside the images */
+.image-item img {
+    width: 100%;  /* Makes the image fill the container */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px; /* Increased font size for better visibility */
+    color: #555;
+}
+
+/* About us text */
 .second_box {
-    flex: 1 1 60%;  /* Allows this section to take up more space */
-    padding-left: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .top_head {
     font-size: 20px;
-    color: #333;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #333;
 }
 
 .head {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .para {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 10px;
     color: #555;
 }
 
-.features {
-    list-style-type: none;
+ul {
     margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
 }
 
-.features li {
+ul li {
     font-size: 16px;
-    color: #333;
     margin-bottom: 10px;
 }
 
-.features i {
+ul li i {
     margin-right: 10px;
-    color: #4CAF50;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .first_box {
-        flex-direction: column;  /* Stack images vertically on smaller screens */
-    }
-
-    .first_box img {
-        width: 100%;  /* Each image takes up full width when stacked */
-        margin-bottom: 20px;  /* Add spacing between images */
-    }
-
-    .second_box {
-        flex: 1 1 100%;  /* Full width on smaller screens */
-        padding-left: 0;
-        margin-top: 20px;
-    }
 }
