@@ -246,3 +246,27 @@ body {
   text-align: center;
   padding: 1rem;
 }
+
+/* Social Icons Container */
+.social-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Spacing between icons */
+}
+
+/* Social Media Icons */
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 32px; /* Icon size */
+  height: 32px; /* Icon size */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
