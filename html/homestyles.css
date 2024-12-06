@@ -107,6 +107,7 @@ body {
 .about {
   background: #ffffff;
   padding: 2rem;
+  margin-left: 50px;
 }
 
 .about-container {
