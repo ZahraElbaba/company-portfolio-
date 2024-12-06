@@ -1,4 +1,4 @@
-/* about style*/
+
 .hero {
     background: linear-gradient(to bottom, #ba34db, #ffffff);
     color: white;
@@ -42,7 +42,7 @@
     border-radius: 5px;
   }
 body {
-    background-color: #EAD9F2; 
+    background: linear-gradient(to bottom, #ba34db, #ffffff);
     color: white; 
 }
 .sec{
