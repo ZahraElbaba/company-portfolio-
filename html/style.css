@@ -1,4 +1,7 @@
-
+body {
+  background: linear-gradient(to bottom, #ba34db, #ffffff);
+  color: white; 
+}
 .hero {
     background: linear-gradient(to bottom, #ba34db, #ffffff);
     color: white;
@@ -8,15 +11,15 @@
   .site-logo {
     width: 122px;
     height: 40px;
-    object-fit: contain; /* Ensures the image is not stretched */
+    object-fit: contain;
     margin-top: 5px;
   }
   .site-title {
     font-size: 1rem;
     font-weight: bold;
-    color: white; /* Adjust to match your theme */
-    text-transform: uppercase; /* Optional: Makes the text uppercase */
-  } 
+    color: white; 
+    text-transform: uppercase;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -41,10 +44,6 @@
     color: white;
     border-radius: 5px;
   }
-body {
-    background: linear-gradient(to bottom, #ba34db, #ffffff);
-    color: white; 
-}
 .sec{
     padding: 9em 0;
     width: 100%;
@@ -60,10 +59,10 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
 }
-.heading{
-    color: #473829;
-    font-size: 5em;
-    padding-top: 10px;
+.heading {
+  color: #BA34DB;
+  font-size: 5em;
+  padding-top: 10px;
 }
 .right_box li{
     color: #f0bdce;
@@ -72,14 +71,10 @@ body {
 .left_box input{
     padding: 15px;
     outline: none;
-    color: #473829;
     border: 2px solid #f6bfd1;
 }
 .left_box textarea{
     padding: 15px;
     border: 2px solid #f6bfd1;
     outline: none;
-}
-.top_heading{
-    font-size: 40px;
 }

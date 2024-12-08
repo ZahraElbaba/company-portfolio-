@@ -103,31 +103,87 @@ body {
   object-fit: contain;
 }
 
-/* About Section */
+/*about us section*/
+/* About Section Styling */
 .about {
-  background: #ffffff;
-  padding: 2rem;
-  margin-left: 50px;
+  padding: 4rem 2rem;
+  background-color: #ffffff; /* White background */
+  text-align: center;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ba34db; /* Dark text color */
+  margin-bottom: 2rem;
 }
 
 .about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  display: flex; /* Use flexbox for row layout */
+  flex-direction: row; /* Place text and image containers side by side */
+  justify-content: center; /* Center the row */
+  align-items: center; /* Align containers vertically */
+  gap: 2rem; /* Space between text and image containers */
 }
 
 .text-container {
-  max-width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack text items vertically */
+  gap: 1.5rem; /* Space between paragraphs */
+  text-align: left; /* Align text to the left */
+  max-width: 500px; /* Set a maximum width for the text container */
 }
 
-.text-container .button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #ba34db;
-  color: white;
-  text-decoration: none;
+.about-item h3 {
+  font-size: 1.5rem;
+  color: #ba34db; /* Purple heading color */
+  margin-bottom: 0.5rem;
 }
+
+.about-item p {
+  font-size: 1rem;
+  color: #666; /* Subtle text color */
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ba34db;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-self: flex-start; /* Align button to the left */
+  margin-top: 1rem;
+}
+
+/* Image Container */
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Adjust image size */
+  object-fit: contain; /* Ensure the image isn't stretched */
+  align-self: center; /* Center the image within its container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .text-container {
+    align-items: center;
+  }
+
+  .image-container img {
+    max-width: 100%; /* Allow the image to take full width */
+  }
+}
+
 
 /* Services Section */
 .services {
@@ -139,8 +195,17 @@ body {
 
 .services h2 {
   margin-bottom: 2rem;
+  color:#ba34db;
 }
 
+.services h3 {
+  color: #ffffff;
+}
+.services p{
+  color: #ffffff;
+  margin-top: 2rem;
+
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -148,14 +213,29 @@ body {
 }
 
 .service-item {
-  background: white;
+  background: rgb(255, 255, 255, 0.1);
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+/* Hover Effect */
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.service-item.clicked {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-color: #ba34db;
 }
 
 .service-item img {
   width: 100%;
+  max-height: 260px;
   border-radius: 5px;
 }
 
