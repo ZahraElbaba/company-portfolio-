@@ -37,6 +37,7 @@
   
   .navbar .menu li a {
     color: white;
+    font-size: large;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
@@ -46,6 +47,7 @@
     color: white;
     border-radius: 5px;
   }
+
   /* Services Section */
 .services {
     background-color: #fff;
@@ -55,9 +57,10 @@
   }
   
   .services-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #ba34db;
     margin-bottom: 40px;
+    font-style: italic;
   }
   
   .services-grid {
@@ -71,16 +74,17 @@
   .text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 20px;
-    text-align: left;
+    text-align: center;
   }
   
   .text-container h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #ba34db;
+    align-self: center;
   }
   
   .text-container p {
@@ -89,13 +93,14 @@
   }
   
   .text-container .cta {
-    display: inline-block;
+    
     background-color: #ba34db;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    justify-items: center;
   }
   
   .image-container img {
@@ -106,16 +111,6 @@
     border-radius: 10px;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-  
-    .text-container, .image-container {
-      text-align: center;
-    }
-  }
   
 /* Footer */
 .footer {
@@ -155,3 +150,44 @@
     transform: scale(1.2); 
   }
   
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        padding: 1rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 0.9rem;
+    }
+
+    .text-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-title {
+        font-size: 1.2rem;
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ensure images fit smaller screens */
+    }
+}
