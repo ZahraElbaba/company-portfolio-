@@ -1,52 +1,45 @@
-body {
-  background: linear-gradient(to bottom, #ba34db, #ffffff);
-  color: white; 
-}
 .hero {
-    background: linear-gradient(to bottom, #ba34db, #ffffff);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-  }
-  .site-logo {
-    width: 122px;
-    height: 40px;
-    object-fit: contain;
-    margin-top: 5px;
-  }
-  .site-title {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white; 
-    text-transform: uppercase;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-  
-  .navbar .menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .navbar .menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-  }
-  
-  .join-btn {
-    background-color: #ba34db;
-    color: white;
-    border-radius: 5px;
-  }
-.sec{
-    padding: 9em 0;
-    width: 100%;
+  background: linear-gradient(to bottom, #ba34db, #ffffff);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.site-logo {
+  width: 122px;
+  height: 40px;
+  object-fit: contain; 
+  margin-top: 5px;
+}
+.site-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; 
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .menu li a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.join-btn {
+  background-color: #ba34db;
+  color: white;
+  border-radius: 5px;
 }
 .box{
     display: grid;
@@ -64,6 +57,9 @@ body {
   font-size: 5em;
   padding-top: 10px;
 }
+.top_heading{
+  color: #BA34DB;
+}
 .right_box li{
     color: #f0bdce;
     margin-right: 5px;
@@ -77,4 +73,16 @@ body {
     padding: 15px;
     border: 2px solid #f6bfd1;
     outline: none;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(White,#ba34db);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding:2rem;
+  justify-content:end;
+  align-items: center;
 }
