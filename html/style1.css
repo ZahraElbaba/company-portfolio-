@@ -1,6 +1,6 @@
 #about {
     padding: 60px 30px;
-    background: linear-gradient(to bottom, #ffffff, #ba34db);
+    background-color: white;
     text-align: center;
 }
 .hero {
@@ -46,14 +46,6 @@
     color: white;
     border-radius: 5px;
   }
- 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
- 
 .intro {
     padding: 40px;
     border-radius: 10px; 
@@ -107,4 +99,52 @@
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(White,#ba34db);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding:2rem;
+  justify-content:end;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(White,#ba34db);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding:2rem;
+  justify-content:end;
+  align-items: center;
+}
+
+/* Social Icons Container */
+.social-icons {
+  margin-top:150px;
+  size: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Spacing between icons */
+}
+
+/* Social Media Icons */
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px; 
+  height: 20px; 
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); 
 }
