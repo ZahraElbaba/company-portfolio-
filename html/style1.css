@@ -1,8 +1,7 @@
-/* General reset and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#about {
+    padding: 60px 30px;
+    background: linear-gradient(to bottom, #ffffff, #ba34db);
+    text-align: center;
 }
 .hero {
     background: linear-gradient(to bottom, #ba34db, #ffffff);
@@ -13,15 +12,15 @@
   .site-logo {
     width: 122px;
     height: 40px;
-    object-fit: contain; /* Ensures the image is not stretched */
+    object-fit: contain; 
     margin-top: 5px;
   }
   .site-title {
     font-size: 1rem;
     font-weight: bold;
-    color: white; /* Adjust to match your theme */
-    text-transform: uppercase; /* Optional: Makes the text uppercase */
-  } 
+    color: white; 
+    text-transform: uppercase; 
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,100 +45,65 @@
     color: white;
     border-radius: 5px;
   }
+ 
 
-/* Body and Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #ba34db, #ffffff);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.intro {
+    padding: 40px;
+    border-radius: 10px; 
+    margin-bottom: 40px; 
+    box-shadow: 0 6px 15px #e7c8ec; 
 }
 
-/* About Section */
-.section {
-    padding: 50px 20px;
-    max-width: 1200px;
+.intro h3 {
+    font-size: 2.5rem;
+    color: #ba34db; 
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #BA34DB; 
+}
+
+.text-container {
+    max-width: 900px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    padding-bottom: 30px;
+}
+
+.about-item {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about-item h3 {
+    font-size: 2.5rem;
+    color: #BA34DB;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-item p {
+    font-size: 1.2rem;
+    color: #BA34DB;;
 }
 
 .first_part {
     display: flex;
-    flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
-    gap: 20px;  /* Space between images */
-    justify-content: space-between;  /* Optional: space between items */
-}
-
-.first_box {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;  /* Take up full width */
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .first_box img {
-    width: 32%;  /* Ensures images take up roughly one-third of the space */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Optional: adds rounded corners */
-}
-
-/* Styling for the text beside the images */
-.second_box {
-    flex: 1 1 60%;  /* Allows this section to take up more space */
-    padding-left: 20px;
-}
-
-.top_head {
-    font-size: 20px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.head {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.para {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.features {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-.features li {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.features i {
-    margin-right: 10px;
-    color: #4CAF50;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .first_box {
-        flex-direction: column;  /* Stack images vertically on smaller screens */
-    }
-
-    .first_box img {
-        width: 100%;  /* Each image takes up full width when stacked */
-        margin-bottom: 20px;  /* Add spacing between images */
-    }
-
-    .second_box {
-        flex: 1 1 100%;  /* Full width on smaller screens */
-        padding-left: 0;
-        margin-top: 20px;
-    }
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
