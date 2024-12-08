@@ -1,3 +1,10 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
 .hero {
     background: linear-gradient(to bottom, #ba34db, #ffffff);
     color: white;
@@ -50,6 +57,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2em;
+    margin-left: 50px;
 }
 .left_box{
     display: grid;
@@ -58,7 +66,7 @@
 }
 .heading {
   color: #BA34DB;
-  font-size: 5em;
+  font-size: 3em;
   padding-top: 10px;
 }
 .top_heading{
@@ -84,28 +92,17 @@
   background: linear-gradient(White,#ba34db);
   color: white;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding:2rem;
   justify-content:end;
   align-items: center;
-}
-.footer {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(White,#ba34db);
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding:2rem;
-  justify-content:end;
-  align-items: center;
+  margin-top: -100px;
 }
 
 /* Social Icons Container */
 .social-icons {
   margin-top:150px;
+  margin-bottom: 15px;
   size: 100px;
   display: flex;
   justify-content: center;

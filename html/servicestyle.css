@@ -16,14 +16,14 @@ body {
   .site-logo {
     width: 122px;
     height: 40px;
-    object-fit: contain; /* Ensures the image is not stretched */
+    object-fit: contain;
     margin-top: 5px;
   }
   .site-title {
     font-size: 1rem;
     font-weight: bold;
-    color: white; /* Adjust to match your theme */
-    text-transform: uppercase; /* Optional: Makes the text uppercase */
+    color: white;
+    text-transform: uppercase; 
     font-family: inter;
   } 
   .navbar {

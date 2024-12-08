@@ -259,6 +259,7 @@ body {
 /* Social Icons Container */
 .social-icons {
   margin-top: 0.5rem;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   gap: 1rem; /* Spacing between icons */
