@@ -196,6 +196,7 @@ body {
 .services h2 {
   margin-bottom: 2rem;
   color:#ba34db;
+  font-size: 2.5rem;
 }
 
 .services h3 {
@@ -218,7 +219,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+  cursor: auto;
 }
 /* Hover Effect */
 .service-item:hover {
@@ -238,7 +239,12 @@ body {
   max-height: 260px;
   border-radius: 5px;
 }
-
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
 /* Footer */
 .footer {
   background: #ba34db;
@@ -261,8 +267,8 @@ body {
 }
 
 .social-icons img {
-  width: 32px; /* Icon size */
-  height: 32px; /* Icon size */
+  width: 20px; /* Icon size */
+  height: 20px; /* Icon size */
   transition: transform 0.3s ease; /* Add hover effect */
 }
 

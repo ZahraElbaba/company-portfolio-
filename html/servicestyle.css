@@ -1,0 +1,157 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    background: linear-gradient(to bottom, #ba34db, #ffffff);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  .site-logo {
+    width: 122px;
+    height: 40px;
+    object-fit: contain; /* Ensures the image is not stretched */
+    margin-top: 5px;
+  }
+  .site-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Adjust to match your theme */
+    text-transform: uppercase; /* Optional: Makes the text uppercase */
+  } 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .join-btn {
+    background-color: #ba34db;
+    color: white;
+    border-radius: 5px;
+  }
+  /* Services Section */
+.services {
+    background-color: #fff;
+    padding: 40px 20px;
+    color: #ba34db;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 3rem;
+    color: #ba34db;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .text-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ba34db;
+  }
+  
+  .text-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-container .cta {
+    display: inline-block;
+    background-color: #ba34db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    width: 450px; /* Optional: Sets a consistent max width for all images */
+    height: 350px; /* Optional: Sets a consistent max height for all images */
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .text-container, .image-container {
+      text-align: center;
+    }
+  }
+  
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(White,#ba34db);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding:2rem;
+    justify-content:end;
+    align-items: center;
+}
+  
+  /* Social Icons Container */
+  .social-icons {
+    margin-top:150px;
+    size: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Spacing between icons */
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 20px; 
+    height: 20px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2); 
+  }
+  
